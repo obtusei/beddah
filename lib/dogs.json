@@ -1,0 +1,106 @@
+[
+  {
+    "name":"Tommy",
+    "age":2,
+    "gender":"Male",
+    "breed":"Pug",
+    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
+    "description":"This is good dog",
+    "deseases":[
+      "Parainfluenza",
+      "Bordetella",
+      "Leptospirosis",
+      "Lyme disease",
+      "Canine influenza",
+      "Coronavirus"
+    ],
+    "vacinations":[
+      "Rabies",
+      "Distemper",
+      "Parvovirus"
+    ],
+    "behaviour": ["kind", "cuddly"],
+    "owner": {
+      "name": "John",
+      "location": "London"
+    }
+  },
+  {
+    "name":"Tommy",
+    "age":2,
+    "gender":"Male",
+    "breed":"Pug",
+    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
+    "description":"This is good dog",
+    "deseases":[
+      "Parainfluenza",
+      "Bordetella",
+      "Leptospirosis",
+      "Lyme disease",
+      "Canine influenza",
+      "Coronavirus"
+    ],
+    "vacinations":[
+      "Rabies",
+      "Distemper",
+      "Parvovirus"
+    ],
+    "behaviour": ["kind", "cuddly"],
+    "owner": {
+      "name": "John",
+      "location": "London"
+    }
+  },
+  {
+    "name":"Tommy",
+    "age":2,
+    "gender":"Male",
+    "breed":"Pug",
+    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
+    "description":"This is good dog",
+    "deseases":[
+      "Parainfluenza",
+      "Bordetella",
+      "Leptospirosis",
+      "Lyme disease",
+      "Canine influenza",
+      "Coronavirus"
+    ],
+    "vacinations":[
+      "Rabies",
+      "Distemper",
+      "Parvovirus"
+    ],
+    "behaviour": ["kind", "cuddly"],
+    "owner": {
+      "name": "John",
+      "location": "London"
+    }
+  },
+  {
+    "name":"Tommy",
+    "age":2,
+    "gender":"Male",
+    "breed":"Pug",
+    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
+    "description":"This is good dog",
+    "deseases":[
+      "Parainfluenza",
+      "Bordetella",
+      "Leptospirosis",
+      "Lyme disease",
+      "Canine influenza",
+      "Coronavirus"
+    ],
+    "vacinations":[
+      "Rabies",
+      "Distemper",
+      "Parvovirus"
+    ],
+    "behaviour": ["kind", "cuddly"],
+    "owner": {
+      "name": "John",
+      "location": "London"
+    }
+  }
+]

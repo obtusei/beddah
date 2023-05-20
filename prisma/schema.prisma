@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./eddah.db"
+}
+
+model User {
+  id                  Int         @id @default(autoincrement())
+  email               String      @unique
+  name                String?
+  password            String
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+  type                String      @default("user")
+  communitiesFollowed Community[]
+  Pet                 Pet[]
+  Adopt               Adopt[]
+}
+
+model Community {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  members   User[]
+}
+
+model Pet {
+  id        Int      @id @default(autoincrement())
+  name      String
+  age       Int?
+  breed     String?
+  gender    String?
+  image     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  owner     User?    @relation(fields: [ownerId], references: [id])
+  ownerId   Int?
+  Adopt     Adopt[]
+}
+
+model Adopt {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  pet       Pet?     @relation(fields: [petId], references: [id])
+  petId     Int?
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    Int?
+}

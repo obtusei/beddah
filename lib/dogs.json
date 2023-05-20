@@ -2,7 +2,7 @@
   {
     "name":"Tommy",
     "age":2,
-    "gender":"Male",
+    "gender":"male",
     "breed":"Pug",
     "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
     "description":"This is good dog",
@@ -28,7 +28,7 @@
   {
     "name":"Tommy",
     "age":2,
-    "gender":"Male",
+    "gender":"female",
     "breed":"Pug",
     "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
     "description":"This is good dog",
@@ -54,7 +54,7 @@
   {
     "name":"Tommy",
     "age":2,
-    "gender":"Male",
+    "gender":"male",
     "breed":"Pug",
     "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
     "description":"This is good dog",
@@ -80,7 +80,7 @@
   {
     "name":"Tommy",
     "age":2,
-    "gender":"Male",
+    "gender":"gay",
     "breed":"Pug",
     "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
     "description":"This is good dog",

@@ -20,32 +20,3 @@ export async function GET(request: Request) {
   });
 }
 
-interface ExtendedNextApiRequest extends NextApiRequest {
-  body: {
-    name: string;
-    email:string;
-    password:string;
-  };
-}
-
-export async function POST(request: ExtendedNextApiRequest) {
-
-  // const user = await prisma.user.create({
-  //   data:{
-  //     name:request.body?.name,
-  //     email:request.body?.email,
-  //     password:request.body?.password
-  //   }
-  // })
-  
-  return NextResponse.json({message:"User created"},
-  {
-  status: 200,
-  headers: {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-  },  
-  });
-}
-

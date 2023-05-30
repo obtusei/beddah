@@ -4,7 +4,7 @@ type Props = {}
 
 function AdminPanel({}: Props) {
   return (
-    <div>AdminPanel</div>
+    <div>admin panel</div>
   )
 }
 

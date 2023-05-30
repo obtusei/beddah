@@ -1,61 +1,118 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
-// datasource db {
-//   provider = "postgresql"
-//   url      = env("DATABASE_URL")
-// }
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./eddah.db"
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+// datasource db {
+//   provider = "sqlite"
+//   url      = "file:./eddah.db"
+// }
+enum UserType {
+  user
+  admin
+}
+
+model Org {
+  id          String      @id @default(cuid())
+  name        String
+  email       String
+  isVerified  Boolean     @default(false)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  location    String?
+  phone       String?
+  image       String?
+  rescues     Rescues[]
+  adopt       Adopt[]
+  pets        Pet[]
+  communities Community[]
+}
+
+model Rescues {
+  id    String  @id @default(cuid())
+  pet   Pet?    @relation(fields: [petId], references: [id])
+  petId String?
+  org   Org?    @relation(fields: [orgId], references: [id])
+  orgId String?
 }
 
 model User {
-  id                  Int         @id @default(autoincrement())
+  id                  String      @id @default(cuid())
   email               String      @unique
   name                String?
   password            String
+  image               String?
   createdAt           DateTime    @default(now())
   updatedAt           DateTime    @updatedAt
   type                String      @default("user")
   communitiesFollowed Community[]
   Pet                 Pet[]
   Adopt               Adopt[]
+  Saved               Saved[]
+  createdCommunity    Community[] @relation(name: "creator")
+}
+
+model Saved {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  User      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+  Pet       Pet?     @relation(fields: [petId], references: [id])
+  petId     String?
 }
 
 model Community {
-  id        Int      @id @default(autoincrement())
+  id        String   @id @default(cuid())
   name      String
+  username  String   @unique
+  creator   User?    @relation(name: "creator", fields: [creatorId], references: [id])
+  creatorId String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   members   User[]
+  Org       Org?     @relation(fields: [orgId], references: [id])
+  orgId     String?
 }
 
 model Pet {
-  id        Int      @id @default(autoincrement())
-  name      String
-  age       Int?
-  breed     String?
-  gender    String?
-  image     String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  owner     User?    @relation(fields: [ownerId], references: [id])
-  ownerId   Int?
-  Adopt     Adopt[]
+  id           String    @id @default(cuid())
+  name         String
+  bio          String?
+  age          Int?
+  breed        String?
+  gender       String?
+  image        String?
+  characters   String[]
+  dieases      String[]
+  vaccinations String[]
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  Adopt        Adopt[]
+  Saved        Saved[]
+  owner        User?     @relation(fields: [ownerId], references: [id])
+  ownerId      String?
+  Rescues      Rescues[]
+  Org          Org?      @relation(fields: [orgId], references: [id])
+  orgId        String?
 }
 
 model Adopt {
-  id        Int      @id @default(autoincrement())
+  id        String   @id @default(cuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   pet       Pet?     @relation(fields: [petId], references: [id])
-  petId     Int?
+  petId     String?
   user      User?    @relation(fields: [userId], references: [id])
-  userId    Int?
+  userId    String?
+  Org       Org?     @relation(fields: [orgId], references: [id])
+  orgId     String?
 }

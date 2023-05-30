@@ -1,0 +1,127 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Org {
+  id String [pk]
+  name String [not null]
+  email String [not null]
+  isVerified Boolean [not null, default: false]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  location String
+  phone String
+  image String
+  rescues Rescues [not null]
+  adopt Adopt [not null]
+  pets Pet [not null]
+  communities Community [not null]
+}
+
+Table Rescues {
+  id String [pk]
+  pet Pet
+  petId String
+  org Org
+  orgId String
+}
+
+Table User {
+  id String [pk]
+  email String [unique, not null]
+  name String
+  password String [not null]
+  image String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  type String [not null, default: 'user']
+  communitiesFollowed Community [not null]
+  Pet Pet [not null]
+  Adopt Adopt [not null]
+  Saved Saved [not null]
+  createdCommunity Community [not null]
+}
+
+Table Saved {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  User User
+  userId String
+  Pet Pet
+  petId String
+}
+
+Table Community {
+  id String [pk]
+  name String [not null]
+  username String [unique, not null]
+  creator User
+  creatorId String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  members User [not null]
+  Org Org
+  orgId String
+}
+
+Table Pet {
+  id String [pk]
+  name String [not null]
+  bio String
+  age Int
+  breed String
+  gender String
+  image String
+  characters String[] [not null]
+  dieases String[] [not null]
+  vaccinations String[] [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Adopt Adopt [not null]
+  Saved Saved [not null]
+  owner User
+  ownerId String
+  Rescues Rescues [not null]
+  Org Org
+  orgId String
+}
+
+Table Adopt {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  pet Pet
+  petId String
+  user User
+  userId String
+  Org Org
+  orgId String
+}
+
+Enum UserType {
+  user
+  admin
+}
+
+Ref: Rescues.petId > Pet.id
+
+Ref: Rescues.orgId > Org.id
+
+Ref: Saved.userId > User.id
+
+Ref: Saved.petId > Pet.id
+
+Ref: Community.creatorId > User.id
+
+Ref: Community.orgId > Org.id
+
+Ref: Pet.ownerId > User.id
+
+Ref: Pet.orgId > Org.id
+
+Ref: Adopt.petId > Pet.id
+
+Ref: Adopt.userId > User.id
+
+Ref: Adopt.orgId > Org.id

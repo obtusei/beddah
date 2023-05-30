@@ -1,15 +1,45 @@
 import { NextResponse } from 'next/server';
- import dogs from '../../../../../lib/dogs.json';
+import type { NextRequest } from 'next/server'
+ import dogs from '@lib/dogs.json';
+import { isAuth } from 'lib/isAuth';
+import prisma from '@db/prisma';
+import { error, success } from 'utils/responses';
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
+  const canAccess = await isAuth(request)
+  
+  if (!canAccess) return NextResponse.json({
+    error: true,
+    message: 'You are not authorized to access this route'
+  },
+  {
+  status: 401,
+  });
+
   return NextResponse.json(dogs,
   {
-  status: 200,
-  headers: {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-  },  
+  status: 200, 
   });
 }
 
+export async function POST(request: NextRequest) {
+  try{
+
+    const {name,bio,age,breed,gender,image}:any = await request.json();
+    if (name === undefined || name == "") return error()
+    const newDog = await prisma.pet.create({
+        data:{
+          name:name,
+          bio:bio,
+          age: age,
+          breed: breed,
+          gender: gender,
+          image: image,
+        }
+      })
+      return success(newDog,"Dog created successfully")
+    }
+    catch(e){
+      return error
+    }
+  }

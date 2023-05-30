@@ -1,15 +1,13 @@
 import { NextResponse } from 'next/server';
-import prisma from '../../../../prisma/prisma';
+import prisma from '@db/prisma';
 import { User } from '@prisma/client';
 import type { NextApiRequest} from "next";
 
 export async function GET(request: Request) {
 
-  const res = await fetch('https://jsonplaceholder.typicode.com/todos', {
-    
-  });
-  const data = await res.json();
-  return NextResponse.json(data,
+  const users = await prisma.user.findMany();
+  
+  return NextResponse.json(users,
   {
   status: 200,
   headers: {

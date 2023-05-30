@@ -1,0 +1,145 @@
+[
+  {
+    "name":"Sneha's care",
+    "email":"info@snehacare.com",
+    "isVerified":false,
+    "location":"Bhaisepati, Lalitpur",
+    "contact":"+9779808645023",
+    "image":"https://www.snehacare.org/wp-content/uploads/2022/03/Snehas-Care-Logo-Master-e1647252640733.png",
+    "rescuseCount":15000,
+    "adoptCount":653,
+    "petsCount":361
+  },
+  {
+    "name":"Street Dog Care",
+    "email":"info@streetdogcare",
+    "isVerified":false,
+    "location":"Boudha Dwar Marg, Boudha",
+    "contact":"+9779813379811",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/327468210_1053525982645248_5308741074505043729_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=R09eRjOfwkAAX_q9r4h&_nc_ht=scontent.fktm3-1.fna&oh=00_AfAoPfIituas-SeoeEQa6cqZmHjqWA-4o84796iykHOG0w&oe=647900D1",
+    "rescuseCount":35,
+    "adoptCount":12,
+    "petsCount":50
+  },
+  {
+    "name":"Community Dog Welfare Kopan",
+    "email":"contact@communitydogwelfarekopan.org",
+    "isVerified":false,
+    "location":"Kapan, Kathmandu",
+    "contact":"+9779803976378",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/308562275_457336039755469_8924112845363197784_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=R_05GFRJPUAAX8gx0hO&_nc_ht=scontent.fktm3-1.fna&oh=00_AfByhOjlgVJOYLXBQrKXhBqKbCySNhwCljM3uzXH-ejgVg&oe=647980DF",
+    "rescuseCount":100,
+    "adoptCount":50,
+    "petsCount":35
+  },
+  {
+    "name":"Together for Paws",
+    "email":"n/a",
+    "isVerified":false,
+    "location":"Bhaktapur",
+    "contact":"+9779861586314 or +9779841708537",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/306949648_468582731970891_1560877936381570602_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IsYtCRQEZucAX9LGQ5q&_nc_ht=scontent.fktm3-1.fna&oh=00_AfALA0VTPjnQYujXpBUWDDEKX_kdnbjMGXff2ztdP3uhAQ&oe=64797836",
+    "rescuseCount":200,
+    "adoptCount":170,
+    "petsCount":30
+  },
+  {
+    "name":"KAT Centre",
+    "email":"katinfo@katcentre.org",
+    "isVerified":false,
+    "location":"Kathmandu",
+    "contact":"+9779869599019",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/341879182_1406186620230823_7243106994121504581_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=akU9blbLeQgAX9tGsfx&_nc_ht=scontent.fktm3-1.fna&oh=00_AfD3hL9HA4IZMqWzfutVsrbUfdNxfszFP7voi0C3ofQI4g&oe=64793E49",
+    "rescuseCount":700,
+    "adoptCount":60,
+    "petsCount":80
+  },
+  {
+    "name":"Shree’s Animal Rescue Nepal",
+    "email":"srijanathakuri75@gmail.com",
+    "isVerified":false,
+    "location":"Patan, Lalitpur",
+    "contact":"n/a",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/332513026_951052146306555_2664904702769295088_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=0U7rBYbabacAX-m8wvE&_nc_ht=scontent.fktm3-1.fna&oh=00_AfAkGlEgiQ4LrMcflstioYpg4mvYKnH-KqK1wB8xJG49hg&oe=6479AE63",
+    "rescuseCount":90,
+    "adoptCount":10,
+    "petsCount":66
+  },
+  {
+    "name":"Animal Nepal",
+    "email":"animalnepal@gmail.com",
+    "isVerified":false,
+    "location":"Patan, Lalitpur",
+    "contact":"+9779801222306",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/327175453_616426517155381_564737622355506789_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=yulPn-7pI18AX8-c-_Y&_nc_ht=scontent.fktm3-1.fna&oh=00_AfBRCph45HaMK3kH8dKSKw-loytBZqjYusTFNeG6VatY6w&oe=6479A12A",
+    "rescuseCount":850,
+    "adoptCount":160,
+    "petsCount":600
+  },
+  {
+    "name":"HART",
+    "email":"n/a",
+    "isVerified":false,
+    "location":"Pokhara and Bharatpur (Chitwan)",
+    "contact":"Pokhara Phone: (+977) 98-46531069 or (+977) 98-19104973, Chitwan Phone: (+977) 98-45580779",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/347771170_1016620889721450_7604280801518698428_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=jnv_2XOT7i0AX-ZHvQK&_nc_ht=scontent.fktm3-1.fna&oh=00_AfB6SMtzIJN2mJfldjUsgG_93jh-MmftJ00bfNH8jUkFNQ&oe=6479B5DB",
+    "rescuseCount":400,
+    "adoptCount":90,
+    "petsCount":365
+  },
+  {
+    "name":"Soltis’ Hope Street Animal Rescue",
+    "email":"angela77@soltishopestreetanimalrescue.org",
+    "isVerified":false,
+    "location":"Bardiya, Nepalgunj, Dang, Dhangadi, Surkhet, Dhading, Butwal, Jhapa, Biratnagar, Heutuda, and Kathmandu.",
+    "contact":"",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/242464607_196991549169576_8977160309596938647_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=SRJTIkqniQEAX8LrHS5&_nc_ht=scontent.fktm3-1.fna&oh=00_AfCLzitxrl--hiWjF2so7057gUD8h3IiWU34PXchYmvWdA&oe=6478F80F",
+    "rescuseCount":1000,
+    "adoptCount":750,
+    "petsCount":190
+  },
+  {
+    "name":"I Care You",
+    "email":"gaddashukla@gmail.com",
+    "isVerified":false,
+    "location":"Kanchanpur District, Far Western Nepal",
+    "contact":"+9779848802372",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/321826100_1064640531032314_6899560417629873325_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=GXdhAOe2AUEAX-85lFr&_nc_ht=scontent.fktm3-1.fna&oh=00_AfCVFe2xX2nfdAdy18gqXr2ncUtQiPGqwJhBrrtiMv_VkQ&oe=64797C8C",
+    "rescuseCount":600,
+    "adoptCount":70,
+    "petsCount":460
+  },
+  {
+    "name":"Aatmoutsarga Nepal",
+    "email":"n/a",
+    "isVerified":false,
+    "location":"Butwal, Lumbini",
+    "contact":"instagram : @aatmoutsarganepal",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t1.6435-9/91597254_100282968311619_223618992684662784_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qLZf4NW52fkAX9oI2-b&_nc_ht=scontent.fktm3-1.fna&oh=00_AfCqF-sFv5MXtwoglFsVV0VBhuBKI9aWNWCoBMWPMXqtTA&oe=649C4718",
+    "rescuseCount":700,
+    "adoptCount":60,
+    "petsCount":80
+  },
+  {
+    "name":"Paaila",
+    "email":"paailateam@gmail.com",
+    "isVerified":false,
+    "location":"Bode, Bhaktapur",
+    "contact":"+9779749355925",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/262799376_437127984592099_4452134047175773179_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qX8aJph4eSUAX8lXoat&_nc_oc=AQmFfV5bTnKRSzZZs4E71u-REzUsXBo7w34dEBZydDMwCuyWbwQ4OmjI2S1bWnLNOxEYqm1hi5rSXzIRSbUuduWw&_nc_ht=scontent.fktm3-1.fna&oh=00_AfDKRNL0DJoym22OP-RG5rMvqy23W4VgxUPl-YZ5U1ot7Q&oe=647A3130",
+    "rescuseCount":850,
+    "adoptCount":600,
+    "petsCount":460
+  },
+  {
+    "name":"Nepal Street Animal Rescue",
+    "email":"n/a",
+    "isVerified":false,
+    "location":"Portland, Oregon",
+    "contact":"888-690-SPCA (7722) or 212-244-SPCA (7722)",
+    "image":"https://scontent.fktm3-1.fna.fbcdn.net/v/t31.18172-8/17239866_10210864741949812_4554887255969792868_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8631f5&_nc_ohc=jiP0G08gvqwAX_qmBPQ&_nc_ht=scontent.fktm3-1.fna&oh=00_AfDFTIyEo7rkQab1OoYVdp0AqbKsVGYDNl605RgGnhBOhw&oe=649C4BA8",
+    "rescuseCount":30000,
+    "adoptCount":1500,
+    "petsCount":970
+  }
+]

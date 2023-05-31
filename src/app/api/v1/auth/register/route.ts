@@ -17,7 +17,7 @@ export async function  POST(req:NextRequest){
       })
     }
 
-    await prisma.user.create({
+    const user = await prisma.user.create({
       data:{
         name: name,
         email: email,
@@ -27,7 +27,8 @@ export async function  POST(req:NextRequest){
     
     return NextResponse.json({
       status: "success",
-      message: "User created successfully"
+      message: "User created successfully",
+      data: user
     },{
       status: 201
     })

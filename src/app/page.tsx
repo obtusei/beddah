@@ -32,7 +32,7 @@ export default function Home() {
         </Link>
       </div>
       
-      <Link href={"/apis"} className='flex gap-1 items-center px-6 p-4 text-sm bg-black bg-opacity-20 fill-black rounded-full'>
+      <Link href={"https://sakshipoudyl.notion.site/eddah-api-dcb90738a119484daf642c99279ab723"} className='flex gap-1 items-center px-6 p-4 text-sm bg-black bg-opacity-20 fill-black rounded-full'>
           check the api 
           <ArrowRightUpIcon/>     
       </Link>

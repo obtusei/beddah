@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
       return success(newDog,"Dog created successfully")
     }
     catch(e){
-      return error
+      return error()
     }
 }
 
@@ -57,6 +57,6 @@ export async function DELETE(request: NextRequest) {
       return success(newDog,"Dog created successfully")
     }
     catch(e){
-      return error
+      return error()
     }
 }

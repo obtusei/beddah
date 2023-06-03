@@ -32,7 +32,7 @@ export default function Home() {
         </Link>
       </div>
       
-      <Link href={"/admin"} className='flex gap-1 items-center px-6 p-4 text-sm bg-black bg-opacity-20 fill-black rounded-full'>
+      <Link href={"/apis"} className='flex gap-1 items-center px-6 p-4 text-sm bg-black bg-opacity-20 fill-black rounded-full'>
           check the api 
           <ArrowRightUpIcon/>     
       </Link>

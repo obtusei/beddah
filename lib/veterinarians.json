@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbasaur",
+    "location":"Pallet Town",
+    "image":"https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/1200px-001Bulbasaur.png"
+  },
+  {
+    "id": 2,
+    "name": "Bulbasaur",
+    "location":"Pallet Town",
+    "image":"https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/1200px-001Bulbasaur.png"
+  },
+  {
+    "id": 3,
+    "name": "Bulbasaur",
+    "location":"Pallet Town",
+    "image":"https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/1200px-001Bulbasaur.png"
+  },
+  {
+    "id": 4,
+    "name": "Bulbasaur",
+    "location":"Pallet Town",
+    "image":"https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/1200px-001Bulbasaur.png"
+  },
+  {
+    "id": 5,
+    "name": "Bulbasaur",
+    "location":"Pallet Town",
+    "image":"https://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/1200px-001Bulbasaur.png"
+  }
+]

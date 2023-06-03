@@ -24,6 +24,7 @@ model Org {
   id          String      @id @default(cuid())
   name        String
   email       String
+  bio         String?
   isVerified  Boolean     @default(false)
   createdAt   DateTime    @default(now())
   updatedAt   DateTime    @updatedAt
@@ -45,19 +46,31 @@ model Rescues {
 }
 
 model User {
-  id                  String      @id @default(cuid())
-  email               String      @unique
+  id                  String        @id @default(cuid())
+  email               String        @unique
   name                String?
+  bio                 String?
   password            String
   image               String?
-  createdAt           DateTime    @default(now())
-  updatedAt           DateTime    @updatedAt
-  type                String      @default("user")
+  createdAt           DateTime      @default(now())
+  updatedAt           DateTime      @updatedAt
+  type                String        @default("user")
   communitiesFollowed Community[]
   Pet                 Pet[]
   Adopt               Adopt[]
   Saved               Saved[]
-  createdCommunity    Community[] @relation(name: "creator")
+  createdCommunity    Community[]   @relation(name: "creator")
+  vet                 Veterinarian?
+}
+
+model Veterinarian {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  location  String?
+  shopName  String?
+  shopImage String?
+  User      User?    @relation(fields: [userId], references: [id])
+  userId    String?  @unique
 }
 
 model Saved {
@@ -74,6 +87,7 @@ model Community {
   id        String   @id @default(cuid())
   name      String
   username  String   @unique
+  bio       String?
   creator   User?    @relation(name: "creator", fields: [creatorId], references: [id])
   creatorId String?
   createdAt DateTime @default(now())

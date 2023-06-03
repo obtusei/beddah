@@ -1,20 +1,21 @@
 import { NextResponse } from 'next/server';
-// import prisma from '@db/prisma';
+import prisma from '@db/prisma';
 import type { NextRequest} from "next/server";
-import communities from '@lib/communities.json';
 import formidable from "formidable"
-import { error } from 'utils/responses';
+import { error, success } from 'utils/responses';
 import path from 'path';
 import fs from "fs"
 import { IncomingMessage } from 'http';
 export async function GET(request: NextRequest) {
 
+  try{
+    const careCenters = await prisma.org.findMany();
   
-  
-  return NextResponse.json(communities,
-  {
-  status: 200, 
-  });
+  return success(careCenters)
+  }
+  catch{
+    return error()
+  }
 }
 
 

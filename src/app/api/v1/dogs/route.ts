@@ -6,15 +6,15 @@ import prisma from '@db/prisma';
 import { error, success } from 'utils/responses';
 
 export async function GET(request: NextRequest) {
-  const canAccess = await isAuth(request)
+  // const canAccess = await isAuth(request)
   
-  if (!canAccess) return NextResponse.json({
-    error: true,
-    message: 'You are not authorized to access this route'
-  },
-  {
-  status: 401,
-  });
+  // if (!canAccess) return NextResponse.json({
+  //   error: true,
+  //   message: 'You are not authorized to access this route'
+  // },
+  // {
+  // status: 401,
+  // });
 
   return NextResponse.json(dogs,
   {

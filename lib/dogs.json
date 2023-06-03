@@ -1,106 +1,2127 @@
-[
-  {
-    "name":"Tommy",
-    "age":2,
-    "gender":"male",
-    "breed":"Pug",
-    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
-    "description":"This is good dog",
-    "deseases":[
-      "Parainfluenza",
-      "Bordetella",
-      "Leptospirosis",
-      "Lyme disease",
-      "Canine influenza",
-      "Coronavirus"
-    ],
-    "vacinations":[
-      "Rabies",
-      "Distemper",
-      "Parvovirus"
-    ],
-    "behaviour": ["kind", "cuddly"],
-    "owner": {
-      "name": "John",
-      "location": "London"
-    }
-  },
-  {
-    "name":"Tommy",
-    "age":2,
-    "gender":"female",
-    "breed":"Pug",
-    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
-    "description":"This is good dog",
-    "deseases":[
-      "Parainfluenza",
-      "Bordetella",
-      "Leptospirosis",
-      "Lyme disease",
-      "Canine influenza",
-      "Coronavirus"
-    ],
-    "vacinations":[
-      "Rabies",
-      "Distemper",
-      "Parvovirus"
-    ],
-    "behaviour": ["kind", "cuddly"],
-    "owner": {
-      "name": "John",
-      "location": "London"
-    }
-  },
-  {
-    "name":"Tommy",
-    "age":2,
-    "gender":"male",
-    "breed":"Pug",
-    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
-    "description":"This is good dog",
-    "deseases":[
-      "Parainfluenza",
-      "Bordetella",
-      "Leptospirosis",
-      "Lyme disease",
-      "Canine influenza",
-      "Coronavirus"
-    ],
-    "vacinations":[
-      "Rabies",
-      "Distemper",
-      "Parvovirus"
-    ],
-    "behaviour": ["kind", "cuddly"],
-    "owner": {
-      "name": "John",
-      "location": "London"
-    }
-  },
-  {
-    "name":"Tommy",
-    "age":2,
-    "gender":"gay",
-    "breed":"Pug",
-    "photo":"https://images.dog.ceo/breeds/terrier-wheaten/n02098105_3609.jpg",
-    "description":"This is good dog",
-    "deseases":[
-      "Parainfluenza",
-      "Bordetella",
-      "Leptospirosis",
-      "Lyme disease",
-      "Canine influenza",
-      "Coronavirus"
-    ],
-    "vacinations":[
-      "Rabies",
-      "Distemper",
-      "Parvovirus"
-    ],
-    "behaviour": ["kind", "cuddly"],
-    "owner": {
-      "name": "John",
-      "location": "London"
-    }
-  }
-]
+[{
+  "name": "Black spider monkey",
+  "age": 2,
+  "gender": "Female",
+  "breed": "Chihuahua",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A spunky and intelligent Border Collie with a black and white coat",
+  "diseases": [
+    "Coronavirus",
+    "Giardia"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Loyal and protective",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Deer, roe",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Saint Bernard",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Distemper",
+    "Leptospirosis",
+    "Hepatitis"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Loyal and protective",
+    "Aggressive and dominant",
+    "Shy and timid",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Margay",
+  "age": 7,
+  "gender": "Male",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Moose",
+  "age": 6,
+  "gender": "Female",
+  "breed": "Bichon Frise",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Coronavirus",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Lyme disease",
+    "Giardia",
+    "Leptospirosis",
+    "Canine influenza",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Loyal and protective",
+    "Alert and watchful",
+    "Shy and timid"
+  ]
+}, {
+  "name": "Opossum, american virginia",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Bichon Frise",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Giardia",
+    "Canine Parvovirus",
+    "Leptospirosis",
+    "Distemper",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Leptospirosis",
+    "Parvovirus",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Intelligent and curious",
+    "Shy and timid",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Grey heron",
+  "age": 4,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Shy and timid",
+    "Calm and relaxed",
+    "Independent and stubborn",
+    "Loyal and protective",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Black-throated butcher bird",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Giardia",
+    "Canine Parvovirus",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Distemper"
+  ],
+  "behaviour": [
+    "Independent and stubborn",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Otter, canadian river",
+  "age": 10,
+  "gender": "Male",
+  "breed": "Saint Bernard",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Hepatitis"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Shy and timid",
+    "Aggressive and dominant",
+    "Independent and stubborn",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Seal, southern elephant",
+  "age": 3,
+  "gender": "Female",
+  "breed": "Saint Bernard",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Canine Parvovirus",
+    "Kennel Cough",
+    "Rabies"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Distemper",
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Kudu, greater",
+  "age": 9,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Leptospirosis",
+    "Heartworm",
+    "Hepatitis",
+    "Lyme Disease",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Bordetella",
+    "Rabies",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Alert and watchful",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Mexican boa",
+  "age": 7,
+  "gender": "Male",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Coronavirus",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Shy and timid",
+    "Independent and stubborn",
+    "Calm and relaxed",
+    "Energetic and playful",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Black-tailed deer",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+    "Coronavirus",
+    "Rabies"
+  ],
+  "vacinations": [
+    "Rabies",
+    "Coronavirus",
+    "Lyme disease",
+    "Heartworm",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Intelligent and curious",
+    "Affectionate and loving",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Kangaroo, brush-tailed rat",
+  "age": 9,
+  "gender": "Genderqueer",
+  "breed": "Golden Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Lyme disease",
+    "Distemper",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Yak",
+  "age": 6,
+  "gender": "Agender",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Kennel Cough",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Flicker, campo",
+  "age": 4,
+  "gender": "Female",
+  "breed": "German Shepherd",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Leptospirosis",
+    "Canine Parvovirus",
+    "Hepatitis",
+    "Rabies"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Friendly and outgoing",
+    "Shy and timid",
+    "Independent and stubborn"
+  ]
+}, {
+  "name": "Canada goose",
+  "age": 7,
+  "gender": "Male",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Giardia",
+    "Kennel Cough",
+    "Rabies",
+    "Distemper"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Leptospirosis",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Alert and watchful",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Moorhen, purple",
+  "age": 6,
+  "gender": "Genderqueer",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+    "Coronavirus",
+    "Distemper",
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Lyme disease",
+    "Parvovirus",
+    "Bordetella",
+    "Distemper"
+  ],
+  "behaviour": [
+    "Shy and timid",
+    "Calm and relaxed",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Fat-tailed dunnart",
+  "age": 5,
+  "gender": "Male",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Heartworm"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Otter, north american river",
+  "age": 4,
+  "gender": "Female",
+  "breed": "Boxer",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Lyme Disease"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Alert and watchful",
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Wombat, common",
+  "age": 2,
+  "gender": "Male",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Hepatitis",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Independent and stubborn"
+  ]
+}, {
+  "name": "Common green iguana",
+  "age": 3,
+  "gender": "Male",
+  "breed": "Golden Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Leptospirosis",
+    "Heartworm",
+    "Giardia",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Giardia"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Independent and stubborn",
+    "Energetic and playful",
+    "Calm and relaxed",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Cattle egret",
+  "age": 5,
+  "gender": "Male",
+  "breed": "Great Dane",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Leptospirosis",
+    "Rabies",
+    "Kennel Cough",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Coronavirus",
+    "Distemper",
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Weaver, lesser masked",
+  "age": 7,
+  "gender": "Bigender",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Heartworm",
+    "Leptospirosis",
+    "Giardia",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Calm and relaxed",
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Yellow-headed caracara",
+  "age": 4,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Canine Parvovirus",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Leptospirosis",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Red-tailed cockatoo",
+  "age": 9,
+  "gender": "Female",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Distemper",
+    "Canine Parvovirus",
+    "Rabies",
+    "Leptospirosis",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Leptospirosis"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Friendly and outgoing",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Booby, blue-faced",
+  "age": 8,
+  "gender": "Female",
+  "breed": "Chihuahua",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Distemper",
+    "Kennel Cough",
+    "Giardia",
+    "Rabies",
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Loyal and protective",
+    "Friendly and outgoing",
+    "Affectionate and loving",
+    "Calm and relaxed",
+    "Shy and timid"
+  ]
+}, {
+  "name": "Hyena, striped",
+  "age": 8,
+  "gender": "Male",
+  "breed": "Boxer",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A spunky and intelligent Border Collie with a black and white coat",
+  "diseases": [
+    "Canine Parvovirus",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Rabies"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Loyal and protective",
+    "Intelligent and curious",
+    "Independent and stubborn"
+  ]
+}, {
+  "name": "Monkey, black spider",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Shih Tzu",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Kennel Cough",
+    "Hepatitis",
+    "Lyme Disease",
+    "Distemper"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Friendly and outgoing",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Common nighthawk",
+  "age": 5,
+  "gender": "Male",
+  "breed": "Beagle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Lyme Disease",
+    "Distemper",
+    "Hepatitis",
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Rabies",
+    "Leptospirosis",
+    "Distemper",
+    "Lyme disease",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Shy and timid",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Brazilian otter",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Leptospirosis",
+    "Hepatitis",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Distemper"
+  ],
+  "behaviour": [
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Western patch-nosed snake",
+  "age": 4,
+  "gender": "Male",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+    "Leptospirosis",
+    "Lyme Disease",
+    "Coronavirus"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Parvovirus",
+    "Rabies",
+    "Distemper",
+    "Leptospirosis"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Friendly and outgoing",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Defassa waterbuck",
+  "age": 4,
+  "gender": "Male",
+  "breed": "Golden Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Lyme Disease",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Black-winged stilt",
+  "age": 9,
+  "gender": "Male",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Giardia"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Heartworm",
+    "Giardia",
+    "Distemper",
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Shy and timid"
+  ]
+}, {
+  "name": "White-winged black tern",
+  "age": 2,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Giardia",
+    "Leptospirosis",
+    "Lyme Disease",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Leptospirosis",
+    "Bordetella",
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Ring-tailed gecko",
+  "age": 6,
+  "gender": "Male",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Kennel Cough",
+    "Rabies",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Heartworm",
+    "Rabies"
+  ],
+  "behaviour": [
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Grouse, sage",
+  "age": 3,
+  "gender": "Genderfluid",
+  "breed": "Poodle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+    "Rabies",
+    "Hepatitis",
+    "Coronavirus",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Lyme disease",
+    "Coronavirus",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Energetic and playful",
+    "Friendly and outgoing",
+    "Affectionate and loving",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Wallaby, tammar",
+  "age": 7,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Distemper"
+  ],
+  "vacinations": [
+    "Distemper",
+    "Canine influenza",
+    "Coronavirus",
+    "Heartworm"
+  ],
+  "behaviour": [
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Cat, long-tailed spotted",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Heartworm",
+    "Distemper",
+    "Hepatitis",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Friendly and outgoing",
+    "Independent and stubborn",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Deer, savannah",
+  "age": 4,
+  "gender": "Genderqueer",
+  "breed": "Beagle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Lyme Disease"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Rabies",
+    "Parvovirus",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Energetic and playful",
+    "Affectionate and loving",
+    "Independent and stubborn",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Mongoose, javan gold-spotted",
+  "age": 8,
+  "gender": "Male",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Heartworm",
+    "Leptospirosis",
+    "Rabies",
+    "Canine Parvovirus",
+    "Coronavirus"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Shy and timid",
+    "Loyal and protective",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Fat-tailed dunnart",
+  "age": 9,
+  "gender": "Female",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Distemper",
+    "Rabies",
+    "Leptospirosis",
+    "Coronavirus"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Alert and watchful",
+    "Calm and relaxed",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Kangaroo, western grey",
+  "age": 10,
+  "gender": "Male",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+    "Lyme Disease",
+    "Heartworm",
+    "Coronavirus",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Friendly and outgoing",
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Armadillo, giant",
+  "age": 8,
+  "gender": "Male",
+  "breed": "Golden Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Kennel Cough",
+    "Leptospirosis",
+    "Rabies"
+  ],
+  "vacinations": [
+    "Lyme disease",
+    "Parvovirus",
+    "Rabies",
+    "Bordetella",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Independent and stubborn",
+    "Friendly and outgoing",
+    "Alert and watchful",
+    "Intelligent and curious",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Goose, canada",
+  "age": 10,
+  "gender": "Male",
+  "breed": "Great Dane",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Duck, mountain",
+  "age": 9,
+  "gender": "Male",
+  "breed": "Saint Bernard",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A spunky and intelligent Border Collie with a black and white coat",
+  "diseases": [
+    "Giardia",
+    "Leptospirosis",
+    "Canine Parvovirus",
+    "Kennel Cough",
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Shy and timid",
+    "Energetic and playful",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Gaur",
+  "age": 1,
+  "gender": "Male",
+  "breed": "Bichon Frise",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A spunky and intelligent Border Collie with a black and white coat",
+  "diseases": [
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Aggressive and dominant",
+    "Independent and stubborn",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "African porcupine",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Coronavirus",
+    "Heartworm",
+    "Leptospirosis",
+    "Lyme Disease",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Coronavirus",
+    "Bordetella",
+    "Parvovirus",
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Intelligent and curious",
+    "Independent and stubborn"
+  ]
+}, {
+  "name": "Common eland",
+  "age": 6,
+  "gender": "Male",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Shy and timid"
+  ]
+}, {
+  "name": "Sloth bear",
+  "age": 10,
+  "gender": "Male",
+  "breed": "Rottweiler",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Rabies",
+    "Lyme Disease",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Shy and timid",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Meerkat, red",
+  "age": 9,
+  "gender": "Male",
+  "breed": "Shih Tzu",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+    "Heartworm",
+    "Kennel Cough",
+    "Leptospirosis",
+    "Lyme Disease"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Shy and timid",
+    "Affectionate and loving",
+    "Loyal and protective",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Penguin, little blue",
+  "age": 10,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Kennel Cough",
+    "Lyme Disease"
+  ],
+  "vacinations": [
+    "Heartworm"
+  ],
+  "behaviour": [
+    "Shy and timid",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Griffon vulture",
+  "age": 2,
+  "gender": "Female",
+  "breed": "Bichon Frise",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Rabies"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Independent and stubborn",
+    "Affectionate and loving",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Stork, jabiru",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Energetic and playful"
+  ]
+}, {
+  "name": "South American puma",
+  "age": 10,
+  "gender": "Female",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Leptospirosis",
+    "Canine influenza",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Sparrow, rufous-collared",
+  "age": 3,
+  "gender": "Female",
+  "breed": "Labrador Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Aggressive and dominant",
+    "Shy and timid",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "American bison",
+  "age": 5,
+  "gender": "Male",
+  "breed": "Poodle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+    "Lyme Disease",
+    "Kennel Cough",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Friendly and outgoing",
+    "Shy and timid",
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Fox, crab-eating",
+  "age": 10,
+  "gender": "Female",
+  "breed": "Labrador Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Shih-Tzu-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Kennel Cough",
+    "Coronavirus",
+    "Lyme Disease"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Lyme disease",
+    "Canine influenza",
+    "Rabies",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Shy and timid"
+  ]
+}, {
+  "name": "Skink, african",
+  "age": 3,
+  "gender": "Male",
+  "breed": "Australian Shepherd",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Leptospirosis",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Alert and watchful",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Bat, madagascar fruit",
+  "age": 3,
+  "gender": "Genderfluid",
+  "breed": "Golden Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A spunky and intelligent Border Collie with a black and white coat",
+  "diseases": [
+    "Giardia",
+    "Canine Parvovirus",
+    "Distemper",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Distemper",
+    "Giardia",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Intelligent and curious",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Wallaby, dama",
+  "age": 6,
+  "gender": "Female",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Giardia",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Loyal and protective",
+    "Calm and relaxed",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Moose",
+  "age": 2,
+  "gender": "Male",
+  "breed": "Labrador Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+    "Distemper",
+    "Kennel Cough",
+    "Rabies",
+    "Canine Parvovirus",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Leptospirosis",
+    "Lyme disease",
+    "Canine influenza",
+    "Rabies"
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Loyal and protective",
+    "Aggressive and dominant",
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Squirrel, eurasian red",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Poodle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Lyme disease",
+    "Bordetella",
+    "Canine influenza",
+    "Heartworm",
+    "Leptospirosis"
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Independent and stubborn",
+    "Energetic and playful",
+    "Affectionate and loving",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Booby, masked",
+  "age": 7,
+  "gender": "Female",
+  "breed": "German Shepherd",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+    "Giardia",
+    "Leptospirosis",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Distemper",
+    "Lyme disease",
+    "Canine influenza",
+    "Leptospirosis"
+  ],
+  "behaviour": [
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Hartebeest, red",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+    "Leptospirosis"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Eagle, long-crested hawk",
+  "age": 4,
+  "gender": "Male",
+  "breed": "Rottweiler",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Kennel Cough",
+    "Giardia",
+    "Lyme Disease",
+    "Distemper",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+    "Distemper",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Alert and watchful",
+    "Calm and relaxed",
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Sandpiper, spotted wood",
+  "age": 6,
+  "gender": "Female",
+  "breed": "Boxer",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Leptospirosis",
+    "Coronavirus",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Lyme disease",
+    "Giardia",
+    "Parvovirus",
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Water moccasin",
+  "age": 3,
+  "gender": "Genderfluid",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Kennel Cough",
+    "Leptospirosis",
+    "Heartworm",
+    "Lyme Disease",
+    "Rabies"
+  ],
+  "vacinations": [
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Independent and stubborn",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Kingfisher, pied",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Lyme Disease",
+    "Rabies",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Shy and timid",
+    "Loyal and protective",
+    "Alert and watchful",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "White-tailed jackrabbit",
+  "age": 4,
+  "gender": "Female",
+  "breed": "Beagle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Heartworm",
+    "Leptospirosis",
+    "Kennel Cough"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Shy and timid"
+  ]
+}, {
+  "name": "Dog, raccoon",
+  "age": 2,
+  "gender": "Male",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Leptospirosis",
+    "Lyme Disease",
+    "Canine Parvovirus",
+    "Distemper"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Skua, long-tailed",
+  "age": 3,
+  "gender": "Male",
+  "breed": "Labrador Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Coronavirus",
+    "Lyme Disease",
+    "Leptospirosis",
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Rabies",
+    "Canine influenza",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Loyal and protective",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Crane, stanley",
+  "age": 9,
+  "gender": "Female",
+  "breed": "Boxer",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Heartworm",
+    "Coronavirus",
+    "Leptospirosis",
+    "Lyme Disease",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Lyme disease",
+    "Distemper",
+    "Rabies",
+    "Heartworm"
+  ],
+  "behaviour": [
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Tortoise, indian star",
+  "age": 2,
+  "gender": "Female",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Distemper"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Sheep, american bighorn",
+  "age": 8,
+  "gender": "Agender",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Canine Parvovirus",
+    "Heartworm",
+    "Rabies"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Canine influenza",
+    "Distemper",
+    "Giardia",
+    "Bordetella"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Energetic and playful",
+    "Calm and relaxed",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Oystercatcher, blackish",
+  "age": 9,
+  "gender": "Male",
+  "breed": "Rottweiler",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Heartworm",
+    "Coronavirus"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Independent and stubborn",
+    "Aggressive and dominant",
+    "Energetic and playful",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Langur, common",
+  "age": 6,
+  "gender": "Male",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Heartworm",
+    "Coronavirus",
+    "Kennel Cough",
+    "Hepatitis",
+    "Distemper"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Distemper",
+    "Lyme disease",
+    "Leptospirosis",
+    "Heartworm"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Large cormorant",
+  "age": 4,
+  "gender": "Male",
+  "breed": "Saint Bernard",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Lyme Disease",
+    "Leptospirosis",
+    "Giardia",
+    "Coronavirus"
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Heartworm",
+    "Distemper",
+    "Bordetella",
+    "Rabies"
+  ],
+  "behaviour": [
+    "Aggressive and dominant",
+    "Affectionate and loving",
+    "Intelligent and curious",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "African pied wagtail",
+  "age": 8,
+  "gender": "Female",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A loyal and protective German shepherd with a dark coat",
+  "diseases": [
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Leptospirosis",
+    "Giardia",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Calm and relaxed",
+    "Shy and timid",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Mule deer",
+  "age": 9,
+  "gender": "Female",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+    "Kennel Cough",
+    "Lyme Disease",
+    "Distemper",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Energetic and playful",
+    "Affectionate and loving",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Heron, little",
+  "age": 10,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Rabies",
+    "Coronavirus",
+    "Distemper"
+  ],
+  "vacinations": [
+    "Lyme disease",
+    "Canine influenza",
+    "Heartworm",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Alert and watchful",
+    "Energetic and playful",
+    "Independent and stubborn",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Macaque, bonnet",
+  "age": 9,
+  "gender": "Male",
+  "breed": "Golden Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Lyme disease",
+    "Leptospirosis",
+    "Bordetella",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Independent and stubborn",
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Long-nosed bandicoot",
+  "age": 3,
+  "gender": "Female",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A spunky and intelligent Border Collie with a black and white coat",
+  "diseases": [
+    "Hepatitis",
+    "Leptospirosis"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Affectionate and loving",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Andean goose",
+  "age": 7,
+  "gender": "Male",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Rabies",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Bordetella",
+    "Coronavirus",
+    "Giardia"
+  ],
+  "behaviour": [
+    "Shy and timid"
+  ]
+}, {
+  "name": "Urial",
+  "age": 7,
+  "gender": "Male",
+  "breed": "Cocker Spaniel",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Kennel Cough",
+    "Leptospirosis",
+    "Canine Parvovirus"
+  ],
+  "vacinations": [
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Loyal and protective",
+    "Intelligent and curious",
+    "Alert and watchful"
+  ]
+}, {
+  "name": "Amazon parrot (unidentified)",
+  "age": 4,
+  "gender": "Male",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A regal and dignified Great Dane with a fawn coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Giardia",
+    "Bordetella",
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Uinta ground squirrel",
+  "age": 1,
+  "gender": "Male",
+  "breed": "Labrador Retriever",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Canine Parvovirus",
+    "Giardia",
+    "Distemper",
+    "Rabies"
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Leptospirosis",
+    "Distemper"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Intelligent and curious",
+    "Aggressive and dominant",
+    "Loyal and protective",
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Pied avocet",
+  "age": 8,
+  "gender": "Female",
+  "breed": "Bulldog",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Rabies",
+    "Heartworm",
+    "Distemper",
+    "Giardia",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Distemper",
+    "Heartworm"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Independent and stubborn",
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Kite, black",
+  "age": 8,
+  "gender": "Female",
+  "breed": "Poodle",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Calm and relaxed",
+    "Independent and stubborn",
+    "Intelligent and curious"
+  ]
+}, {
+  "name": "Buttermilk snake",
+  "age": 5,
+  "gender": "Female",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Rabies"
+  ],
+  "behaviour": [
+    "Independent and stubborn",
+    "Alert and watchful",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Woodpecker, downy",
+  "age": 3,
+  "gender": "Female",
+  "breed": "Saint Bernard",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Pug-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Heartworm",
+    "Hepatitis",
+    "Coronavirus"
+  ],
+  "vacinations": [
+    "Distemper",
+    "Coronavirus",
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Alert and watchful",
+    "Friendly and outgoing",
+    "Intelligent and curious",
+    "Aggressive and dominant",
+    "Calm and relaxed"
+  ]
+}, {
+  "name": "Seven-banded armadillo",
+  "age": 6,
+  "gender": "Male",
+  "breed": "Doberman Pinscher",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A small and energetic Jack Russell terrier with a white and brown coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Leptospirosis",
+    "Parvovirus"
+  ],
+  "behaviour": [
+    "Independent and stubborn",
+    "Intelligent and curious",
+    "Loyal and protective",
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Eleven-banded armadillo (unidentified)",
+  "age": 7,
+  "gender": "Male",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+    "Coronavirus",
+    "Rabies",
+    "Hepatitis",
+    "Heartworm"
+  ],
+  "vacinations": [
+    "Bordetella",
+    "Rabies"
+  ],
+  "behaviour": [
+    "Intelligent and curious",
+    "Shy and timid",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Common eland",
+  "age": 3,
+  "gender": "Male",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Poodle-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Leptospirosis",
+    "Canine Parvovirus",
+    "Lyme Disease",
+    "Kennel Cough",
+    "Heartworm"
+  ],
+  "vacinations": [
+
+  ],
+  "behaviour": [
+    "Energetic and playful"
+  ]
+}, {
+  "name": "Seven-banded armadillo",
+  "age": 9,
+  "gender": "Female",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Beagle-1.jpg",
+  "description": "A friendly and affectionate Cocker Spaniel with a golden coat",
+  "diseases": [
+    "Kennel Cough",
+    "Distemper",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Heartworm",
+    "Giardia",
+    "Distemper",
+    "Canine influenza",
+    "Rabies"
+  ],
+  "behaviour": [
+    "Loyal and protective"
+  ]
+}, {
+  "name": "Striped skunk",
+  "age": 2,
+  "gender": "Male",
+  "breed": "Australian Shepherd",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-1.jpg",
+  "description": "A brave and alert Doberman Pinscher with a black and tan coat",
+  "diseases": [
+    "Kennel Cough"
+  ],
+  "vacinations": [
+    "Giardia",
+    "Leptospirosis",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Energetic and playful",
+    "Loyal and protective",
+    "Independent and stubborn",
+    "Affectionate and loving",
+    "Shy and timid"
+  ]
+}, {
+  "name": "Cardinal, red-capped",
+  "age": 4,
+  "gender": "Agender",
+  "breed": "Rottweiler",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Chihuahua-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+    "Hepatitis",
+    "Giardia"
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Canine influenza"
+  ],
+  "behaviour": [
+    "Affectionate and loving",
+    "Shy and timid"
+  ]
+}, {
+  "name": "Cape white-eye",
+  "age": 1,
+  "gender": "Female",
+  "breed": "Yorkshire Terrier",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/German-Shepherd-Dog-1.jpg",
+  "description": "A silly and goofy Bulldog with a wrinkled face and a brindle coat",
+  "diseases": [
+    "Leptospirosis",
+    "Coronavirus",
+    "Giardia",
+    "Hepatitis"
+  ],
+  "vacinations": [
+    "Parvovirus",
+    "Distemper",
+    "Coronavirus"
+  ],
+  "behaviour": [
+    "Friendly and outgoing",
+    "Shy and timid",
+    "Affectionate and loving",
+    "Loyal and protective",
+    "Aggressive and dominant"
+  ]
+}, {
+  "name": "Red lava crab",
+  "age": 8,
+  "gender": "Female",
+  "breed": "Dachshund",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Siberian-Husky-1.jpg",
+  "description": "A fluffy golden retriever with a playful personality",
+  "diseases": [
+    "Heartworm",
+    "Canine Parvovirus",
+    "Leptospirosis",
+    "Distemper"
+  ],
+  "vacinations": [
+    "Coronavirus",
+    "Heartworm",
+    "Giardia",
+    "Distemper",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Friendly and outgoing"
+  ]
+}, {
+  "name": "Timber wolf",
+  "age": 6,
+  "gender": "Male",
+  "breed": "Border Collie",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Golden-Retriever-1.jpg",
+  "description": "A calm and gentle Labrador retriever with a black coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Canine influenza",
+    "Giardia",
+    "Coronavirus",
+    "Lyme disease"
+  ],
+  "behaviour": [
+    "Affectionate and loving"
+  ]
+}, {
+  "name": "Australian pelican",
+  "age": 7,
+  "gender": "Female",
+  "breed": "Siberian Husky",
+  "photo": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Rottweiler-1.jpg",
+  "description": "A mischievous and curious Beagle with a tri-color coat",
+  "diseases": [
+
+  ],
+  "vacinations": [
+    "Distemper"
+  ],
+  "behaviour": [
+    "Independent and stubborn"
+  ]
+}]

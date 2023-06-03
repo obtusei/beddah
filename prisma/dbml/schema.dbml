@@ -6,6 +6,7 @@ Table Org {
   id String [pk]
   name String [not null]
   email String [not null]
+  bio String
   isVerified Boolean [not null, default: false]
   createdAt DateTime [default: `now()`, not null]
   updatedAt DateTime [not null]
@@ -30,6 +31,7 @@ Table User {
   id String [pk]
   email String [unique, not null]
   name String
+  bio String
   password String [not null]
   image String
   createdAt DateTime [default: `now()`, not null]
@@ -40,6 +42,17 @@ Table User {
   Adopt Adopt [not null]
   Saved Saved [not null]
   createdCommunity Community [not null]
+  vet Veterinarian
+}
+
+Table Veterinarian {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  location String
+  shopName String
+  shopImage String
+  User User
+  userId String [unique]
 }
 
 Table Saved {
@@ -56,6 +69,7 @@ Table Community {
   id String [pk]
   name String [not null]
   username String [unique, not null]
+  bio String
   creator User
   creatorId String
   createdAt DateTime [default: `now()`, not null]
@@ -107,6 +121,8 @@ Enum UserType {
 Ref: Rescues.petId > Pet.id
 
 Ref: Rescues.orgId > Org.id
+
+Ref: Veterinarian.userId - User.id
 
 Ref: Saved.userId > User.id
 

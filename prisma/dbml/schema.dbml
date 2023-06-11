@@ -6,6 +6,7 @@ Table Org {
   id String [pk]
   name String [not null]
   email String [not null]
+  password String
   bio String
   isVerified Boolean [not null, default: false]
   createdAt DateTime [default: `now()`, not null]
@@ -51,6 +52,7 @@ Table Veterinarian {
   location String
   shopName String
   shopImage String
+  contact String
   User User
   userId String [unique]
 }

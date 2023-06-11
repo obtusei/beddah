@@ -1,32 +1,31 @@
 import prisma from "@db/prisma";
-import { NextResponse, type NextRequest } from "next/server";
-
+import type{ NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
 export async function POST(req:NextRequest){
   try{
     const {dogId, userId} = await req.json();
-    const adopt = await prisma.adopt.create({
+    await prisma.saved.create({
       data:{
         petId: dogId,
         userId: userId
       }
     })
-
-    if (!adopt) return NextResponse.json({
-      status: "failed",
-      message:"Adopted failed",
-    },{status: 400})
-
     return NextResponse.json({
       status: "success",
-      message:"Adopted successfully",
+      message:"Saved successfully",
+    },{
+      status: 200
     })
+
   }
   catch(err){
     return NextResponse.json({
       status: "failed",
-      message:"Adopted failed",
-    },{status: 400})
+      message:"Saved failed",
+    },{
+      status: 400
+    })
   }
 
 }

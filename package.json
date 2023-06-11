@@ -8,7 +8,8 @@
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "hub": "git add . && git commit -m 'update' && git push"
   },
   "dependencies": {
     "@prisma/client": "^4.15.0",

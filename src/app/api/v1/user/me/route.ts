@@ -42,8 +42,16 @@ export async function GET(req: Request) {
         id: (user as any).id
       },
       include:{
-        Saved:true,
-        Adopt:true,
+        Saved:{
+          select:{
+            Pet:true
+          }
+        },
+        Adopt:{
+          select:{
+            pet:true
+          }
+        },
         communitiesFollowed:true,
         Pet:true,
       }

@@ -1,3 +1,4 @@
+import bcrypt from 'bcrypt';
 import prisma from "./prisma";
 import orgs from "../lib/org.json"
 import communities from "../lib/communities.json"
@@ -11,6 +12,7 @@ async function createOrgs(){
           data:{
             name:item.name,
             email:item.email,
+            password:bcrypt.hashSync("12345", 10),
             phone:item.contact,
             location:item.location,
             isVerified:item.isVerified,

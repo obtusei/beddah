@@ -5,8 +5,8 @@
 Table Org {
   id String [pk]
   name String [not null]
-  email String [not null]
-  password String
+  email String [unique, not null]
+  password String [not null]
   bio String
   isVerified Boolean [not null, default: false]
   createdAt DateTime [default: `now()`, not null]

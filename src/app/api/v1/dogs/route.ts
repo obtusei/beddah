@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server'
- import dogs from '@lib/dogs.json';
 import { isAuth } from 'lib/isAuth';
 import prisma from '@db/prisma';
 import { error, success } from 'utils/responses';
@@ -15,6 +14,7 @@ export async function GET(request: NextRequest) {
   // {
   // status: 401,
   // });
+  const dogs =  await prisma.pet.findMany()
 
   return NextResponse.json(dogs,
   {

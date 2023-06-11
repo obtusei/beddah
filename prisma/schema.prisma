@@ -23,8 +23,8 @@ enum UserType {
 model Org {
   id          String      @id @default(cuid())
   name        String
-  email       String
-  password    String?
+  email       String      @unique
+  password    String
   bio         String?
   isVerified  Boolean     @default(false)
   createdAt   DateTime    @default(now())

@@ -5,23 +5,23 @@ import communities from "../lib/communities.json"
 import users from "../lib/users.json"
 import dogs from "../lib/dogs.json"
 
-async function createOrgs(){
-  await Promise.all(
-      orgs.map(async (item) => {
-        await prisma.org.create({
-          data:{
-            name:item.name,
-            email:item.email,
-            password:bcrypt.hashSync("12345", 10),
-            phone:item.contact,
-            location:item.location,
-            isVerified:item.isVerified,
-            image:item.image,
-          }
-        })
-      })
-    )
-}
+// async function createOrgs(){
+//   await Promise.all(
+//       orgs.map(async (item) => {
+//         await prisma.org.create({
+//           data:{
+//             name:item.name,
+//             email:item.email,
+//             password:bcrypt.hashSync("12345", 10),
+//             phone:item.contact,
+//             location:item.location,
+//             isVerified:item.isVerified,
+//             image:item.image,
+//           }
+//         })
+//       })
+//     )
+// }
 
 async function createUsers(){
   await Promise.all(

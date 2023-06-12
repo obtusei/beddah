@@ -1,17 +1,22 @@
-import { NextResponse } from 'next/server';
 import prisma from '@db/prisma';
 import type { NextRequest} from "next/server";
 import formidable from "formidable"
 import { error, success } from 'utils/responses';
-// import path from 'path';
-// import fs from "fs"
-// import { IncomingMessage } from 'http';
 export async function GET(request: NextRequest) {
 
   try{
-    const careCenters = await prisma.org.findMany();
-  
-  return success(careCenters)
+    const id = request.nextUrl.searchParams.get("id")
+    if (id != null){
+      const careCenter =  await prisma.org.findUnique({
+        where:{
+          id:id
+        }
+      })
+      return success(careCenter);
+    }else{
+    const careCenters =  await prisma.org.findMany()
+    return success(careCenters)
+    }
   }
   catch{
     return error()

@@ -14,23 +14,21 @@ export async function GET(request: NextRequest) {
   // {
   // status: 401,
   // });
-  const id = request.nextUrl.searchParams.get("id")
-  if (id != null){
-    const dogs =  await prisma.pet.findUnique({
-      where:{
-        id:id
-      }
-    })
-    return NextResponse.json(dogs,
-    {
-    status: 200, 
-    });
-  }else{
-    const dogs =  await prisma.pet.findMany()
-    return NextResponse.json(dogs,
-    {
-    status: 200, 
-    });
+  try{
+    const id = request.nextUrl.searchParams.get("id")
+    if (id != null){
+      const dog =  await prisma.pet.findUnique({
+        where:{
+          id:id
+        }
+      })
+      return success(dog)
+    }else{
+      const dogs =  await prisma.pet.findMany()
+      return success(dogs)
+    }
+  }catch(er){
+    return error()
   }
 }
 

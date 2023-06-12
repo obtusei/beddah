@@ -14,12 +14,24 @@ export async function GET(request: NextRequest) {
   // {
   // status: 401,
   // });
-  const dogs =  await prisma.pet.findMany()
-
-  return NextResponse.json(dogs,
-  {
-  status: 200, 
-  });
+  const id = request.nextUrl.searchParams.get("id")
+  if (id != null){
+    const dogs =  await prisma.pet.findUnique({
+      where:{
+        id:id
+      }
+    })
+    return NextResponse.json(dogs,
+    {
+    status: 200, 
+    });
+  }else{
+    const dogs =  await prisma.pet.findMany()
+    return NextResponse.json(dogs,
+    {
+    status: 200, 
+    });
+  }
 }
 
 export async function POST(request: NextRequest) {

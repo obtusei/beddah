@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
     // }else{
       const dogs =  await prisma.community.findMany()
       return success({
-        req: request.nextUrl ? request.nextUrl.searchParams.get("comId") : null,
+        req: request.nextUrl ? request.nextUrl.searchParams.has("id") : null,
         data:dogs
       })
     // }

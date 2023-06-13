@@ -3,7 +3,7 @@ import { error, success } from 'utils/responses';
 
 export async function GET(request: NextRequest) {
   try{
-    const communityId = request.nextUrl.searchParams.get("id")
+    const communityId = request.nextUrl.toString()
     if (communityId != null){
       return success({
         com:"community",

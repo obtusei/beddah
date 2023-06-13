@@ -1,19 +1,8 @@
-import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server'
-import { isAuth } from 'lib/isAuth';
 import prisma from '@db/prisma';
 import { error, success } from 'utils/responses';
 
 export async function GET(request: NextRequest) {
-  // const canAccess = await isAuth(request)
-  
-  // if (!canAccess) return NextResponse.json({
-  //   error: true,
-  //   message: 'You are not authorized to access this route'
-  // },
-  // {
-  // status: 401,
-  // });
   try{
     const id = request.nextUrl.searchParams.get("id")
     if (id != null){

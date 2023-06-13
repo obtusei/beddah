@@ -14,7 +14,10 @@ export async function GET(request: NextRequest) {
     //   return success(dog)
     // }else{
       const dogs =  await prisma.community.findMany()
-      return success(dogs)
+      return success({
+        req: request.nextUrl ? request.nextUrl.pathname : null,
+        data:dogs
+      })
     // }
   }catch(er){
     return error()

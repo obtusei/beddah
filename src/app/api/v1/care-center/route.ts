@@ -3,20 +3,9 @@ import type { NextRequest} from "next/server";
 import formidable from "formidable"
 import { error, success } from 'utils/responses';
 export async function GET(request: NextRequest) {
-
   try{
-    const id = request.nextUrl.searchParams.get("id")
-    if (id != null){
-      const careCenter =  await prisma.org.findUnique({
-        where:{
-          id:id
-        }
-      })
-      return success(careCenter);
-    }else{
     const careCenters =  await prisma.org.findMany()
     return success(careCenters)
-    }
   }
   catch{
     return error()

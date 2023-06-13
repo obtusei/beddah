@@ -4,12 +4,12 @@ import { error, success } from 'utils/responses';
 
 export async function GET(request: NextRequest,context: { params: { id: string; } }) {
   try{
-      const community =  await prisma.community.findUnique({
+      const careCenter =  await prisma.org.findUnique({
         where:{
           id:context.params.id
         }
       })
-      return success(community)
+      return success(careCenter)
   }catch(er){
     return error()
   }

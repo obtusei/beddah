@@ -1,22 +1,20 @@
-import type { NextRequest } from 'next/server'
-import prisma from '@db/prisma';
+import type { NextRequest} from "next/server";
 import { error, success } from 'utils/responses';
 
 export async function GET(request: NextRequest) {
   try{
-    const id = request.nextUrl.searchParams.get("id")
-    if (id != null){
-      const dog =  await prisma.pet.findUnique({
-        where:{
-          id:id
-        }
+    const communityId = request.nextUrl.searchParams.get("id")
+    if (communityId != null){
+      return success({
+        com:"community",
+        id:communityId
       })
-      return success(dog)
-    }else{
-      const dogs =  await prisma.pet.findMany()
-      return success(dogs)
-    }
-  }catch(er){
+    } 
+    return success({
+      com:"communities"
+    })
+  }
+  catch{
     return error()
   }
 }

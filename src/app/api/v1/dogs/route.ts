@@ -1,10 +1,12 @@
 import type { NextRequest } from 'next/server'
 import prisma from '@db/prisma';
 import { error, success } from 'utils/responses';
+import { isAuth } from '@lib/isAuth';
 
 export async function GET(request: NextRequest) {
   try{
     const id = request.nextUrl.searchParams.get("id")
+    const sessionUser = await isAuth(request)
     if (id != null){
       const dog =  await prisma.pet.findUnique({
         where:{
@@ -13,8 +15,37 @@ export async function GET(request: NextRequest) {
       })
       return success(dog)
     }else{
-      const dogs =  await prisma.pet.findMany()
-      return success(dogs)
+      const dogs =  await prisma.pet.findMany({
+        include:{
+          Saved:{
+            select:{
+              User:{
+                select:{
+                  id:true
+                }
+              }
+            }
+          }
+        }
+      })
+        const hehe = await Promise.all(dogs.map(async (dog) => {
+          if (sessionUser){
+          const savedItem = await prisma.saved.findUnique({
+            where:{
+                userId_petId:{
+                  userId:sessionUser?.id,
+                  petId:dog.id
+                }
+            }
+          })
+          if (!savedItem) return {dog}
+          return {dog,isSaved:true}
+        }
+        return {dog}
+
+        }))
+        return success(hehe)
+      
     }
   }catch(er){
     return error()

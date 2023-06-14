@@ -1,16 +1,20 @@
 import prisma from "@db/prisma";
+import { isAuth } from "@lib/isAuth";
 import type{ NextRequest } from "next/server";
 import { NextResponse } from "next/server";
+import { error, unAuthorized } from "utils/responses";
 
 export async function POST(req:NextRequest){
   try{
     const {dogId, userId} = await req.json();
-    await prisma.saved.create({
-      data:{
-        petId: dogId,
-        userId: userId
-      }
-    })
+    const sessionUser = await isAuth(req)
+    if (!sessionUser) return unAuthorized()
+      await prisma.saved.create({
+        data:{
+          petId: dogId,
+          userId: sessionUser.id
+        }
+      })
     return NextResponse.json({
       status: "success",
       message:"Saved successfully",

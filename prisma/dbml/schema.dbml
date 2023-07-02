@@ -22,10 +22,24 @@ Table Org {
 
 Table Rescues {
   id String [pk]
+  by User
   pet Pet
   petId String
+  location Location
+  status RescueStatus [not null, default: 'pending']
+  image String
   org Org
   orgId String
+  locationId String
+  userId String
+}
+
+Table Location {
+  id String [pk]
+  name String
+  lat String
+  lon String
+  Rescues Rescues [not null]
 }
 
 Table User {
@@ -44,6 +58,7 @@ Table User {
   Saved Saved [not null]
   createdCommunity Community [not null]
   vet Veterinarian
+  Rescues Rescues [not null]
 }
 
 Table Veterinarian {
@@ -136,7 +151,17 @@ Enum AdoptStatus {
   rejected
 }
 
+Enum RescueStatus {
+  pending
+  rescued
+  confirmed
+}
+
+Ref: Rescues.userId > User.id
+
 Ref: Rescues.petId > Pet.id
+
+Ref: Rescues.locationId > Location.id
 
 Ref: Rescues.orgId > Org.id
 

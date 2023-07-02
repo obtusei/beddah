@@ -26,6 +26,12 @@ enum AdoptStatus {
   rejected
 }
 
+enum RescueStatus {
+  pending
+  rescued
+  confirmed
+}
+
 model Org {
   id          String      @id @default(cuid())
   name        String
@@ -45,11 +51,25 @@ model Org {
 }
 
 model Rescues {
-  id    String  @id @default(cuid())
-  pet   Pet?    @relation(fields: [petId], references: [id])
-  petId String?
-  org   Org?    @relation(fields: [orgId], references: [id])
-  orgId String?
+  id         String       @id @default(cuid())
+  by         User?        @relation(fields: [userId], references: [id])
+  pet        Pet?         @relation(fields: [petId], references: [id])
+  petId      String?
+  location   Location?    @relation(fields: [locationId], references: [id])
+  status     RescueStatus @default(pending)
+  image      String?
+  org        Org?         @relation(fields: [orgId], references: [id])
+  orgId      String?
+  locationId String?
+  userId     String?
+}
+
+model Location {
+  id      String    @id @default(cuid())
+  name    String?
+  lat     String?
+  lon     String?
+  Rescues Rescues[]
 }
 
 model User {
@@ -68,6 +88,7 @@ model User {
   Saved               Saved[]
   createdCommunity    Community[]   @relation(name: "creator")
   vet                 Veterinarian?
+  Rescues             Rescues[]
 }
 
 model Veterinarian {
@@ -144,3 +165,19 @@ model Adopt {
   @@unique([userId, petId])
   @@unique([orgId, petId])
 }
+
+// model Follow {
+//   id        String       @id @default(cuid())
+//   createdAt DateTime     @default(now())
+//   updatedAt DateTime     @updatedAt
+//   status    AdoptStatus? @default(pending)
+//   pet       Pet?         @relation(fields: [petId], references: [id])
+//   petId     String?
+//   user      User?        @relation(fields: [userId], references: [id])
+//   userId    String?
+//   Org       Org?         @relation(fields: [orgId], references: [id])
+//   orgId     String?
+
+//   @@unique([userId, petId])
+//   @@unique([orgId, petId])
+// }

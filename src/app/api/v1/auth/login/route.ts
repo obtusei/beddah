@@ -21,7 +21,7 @@ export async function POST(req:NextRequest){
       const passwordMatch = await bcrypt.compare(password, user.password)
       if (!passwordMatch) return inCorrect()
       const token  = sign({id: user.id,name:user.name,email:user.email,role:user.type,type:type}, String(process.env.JWT_SECRET))
-      return success({token},"User logged in successfully") 
+      return success({type:"user",token},"User logged in successfully") 
     }
     else if (type == "org"){
       const org = await prisma.org.findUnique({
@@ -33,7 +33,7 @@ export async function POST(req:NextRequest){
       const passwordMatch = await bcrypt.compare(password, org.password)
       if (!passwordMatch) return inCorrect()
       const token  = sign({id: org.id,name:org.name,email:org.email,type:type}, String(process.env.JWT_SECRET))
-      return success({token},"Org logged in successfully") 
+      return success({type:"org",token},"Org logged in successfully") 
     }else{
       return NextResponse.json({
         status: "failed",

@@ -44,12 +44,17 @@ export async function GET(req: Request) {
       include:{
         Saved:{
           select:{
-            Pet:true
+            Pet:true,
           }
         },
         Adopt:{
           select:{
-            pet:true
+            pet:{
+              include:{
+                owner:true
+              }
+            },
+            status:true
           }
         },
         communitiesFollowed:true,

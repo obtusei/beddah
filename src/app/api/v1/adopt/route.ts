@@ -53,3 +53,37 @@ export async function POST(req:NextRequest){
   }
 
 }
+
+export async function DELETE(req:NextRequest){
+  try{
+    const { searchParams } = new URL(req.url)
+    const id = searchParams.get('id')
+    const sessionUser = await isAuth(req)
+    if (sessionUser && id){
+      await prisma.adopt.delete({
+        where:{
+          id:String(id),
+        }
+      })
+
+    return NextResponse.json({
+      status: "success",
+      message:"Adoption deleted successfully",
+    })
+
+    
+  }else{
+    return NextResponse.json({
+      status: "failed",
+      message:"You need to login first",
+    })
+  }
+}
+  catch(err){
+    return NextResponse.json({
+      status: "failed",
+      message:"Adopted failed",
+    },{status: 400})
+  }
+
+}

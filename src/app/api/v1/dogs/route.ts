@@ -11,6 +11,10 @@ export async function GET(request: NextRequest) {
       const dog =  await prisma.pet.findUnique({
         where:{
           id:id
+        },
+        include:{
+          Saved:true,
+          Adopt:true,
         }
       })
       return success(dog)
@@ -30,16 +34,19 @@ export async function GET(request: NextRequest) {
       })
         const hehe = await Promise.all(dogs.map(async (dog) => {
           if (sessionUser){
-          const savedItem = await prisma.saved.findUnique({
-            where:{
+            const userPetInfo = {
                 userId_petId:{
                   userId:sessionUser?.id,
                   petId:dog.id
                 }
             }
+          const savedItem = await prisma.saved.findUnique({
+            where:userPetInfo
           })
-          if (!savedItem) return {dog}
-          return {dog,isSaved:true}
+          const adoptions = await prisma.adopt.findUnique({
+            where:userPetInfo
+          })
+          return {dog,isSaved:savedItem != null ? true:false, isAdopted:adoptions != null ? true:false, adoptionStatus:adoptions !=null ? adoptions.status:null}
         }
         return {dog}
 

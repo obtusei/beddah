@@ -1,4 +1,5 @@
 import prisma from "@db/prisma";
+import { isAuth } from "@lib/isAuth";
 import { NextResponse, type NextRequest } from "next/server";
 
 export async function GET(req:NextRequest,res:NextResponse){
@@ -16,11 +17,13 @@ export async function GET(req:NextRequest,res:NextResponse){
 
 export async function POST(req:NextRequest){
   try{
-    const {dogId, userId} = await req.json();
+    const {dogId} = await req.json();
+    const sessionUser = await isAuth(req)
+    if (sessionUser){
     const adopt = await prisma.adopt.create({
       data:{
         petId: dogId,
-        userId: userId
+        userId: sessionUser.id
       }
     })
 
@@ -33,7 +36,15 @@ export async function POST(req:NextRequest){
       status: "success",
       message:"Adopted successfully",
     })
+
+    
+  }else{
+    return NextResponse.json({
+      status: "failed",
+      message:"You need to login first",
+    })
   }
+}
   catch(err){
     return NextResponse.json({
       status: "failed",

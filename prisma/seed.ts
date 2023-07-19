@@ -4,7 +4,7 @@ import orgs from "../lib/org.json"
 import communities from "../lib/communities.json"
 import users from "../lib/users.json"
 import dogs from "../lib/dogs.json"
-
+import news from "../lib/necdaily/news.json"
 // async function createOrgs(){
 //   await Promise.all(
 //       orgs.map(async (item) => {
@@ -22,6 +22,19 @@ import dogs from "../lib/dogs.json"
 //       })
 //     )
 // }
+
+async function createNews(){
+  await Promise.all(
+      news.map(async (item) => {
+        await prisma.necNews.create({
+          data:{
+            title:item.title,
+            content:item.content,
+          }
+        })
+      })
+    )  
+}
 
 async function createUsers(){
   await Promise.all(
@@ -76,7 +89,8 @@ async function main() {
   // await createOrgs();
   // await createCommunities();
   // await createUsers();
-  await createDogs();
+  // await createDogs();
+  await createNews();
 }
 
 main()

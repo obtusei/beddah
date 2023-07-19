@@ -3,7 +3,7 @@ const uploadImage  = async (image:FormDataEntryValue | null) =>{
       const newData = new FormData();
       const authString = `eddah:eddah123`;
       const encodedAuthString = btoa(authString); 
-      newData.append("folder","eddah")
+      newData.append("folder","eddah/rescues")
       newData.append("file",image)
       try{
         const res = await fetch(`${process.env.IMAGE_UPLOAD_URL}`, {

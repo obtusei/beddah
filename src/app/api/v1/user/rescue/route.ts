@@ -12,6 +12,7 @@ export async function POST(req:NextRequest){
     const locationName = formData.get("locationName")?.toString();
     const locationLat = formData.get("locationLat")?.toString();
     const locationLon = formData.get("locationLon")?.toString();
+    const desc = formData.get("description")?.toString();
     const imagePath = await uploadImage(image)
     await prisma.location.create({
       data:{
@@ -22,6 +23,7 @@ export async function POST(req:NextRequest){
           create:{
             userId:sessionUser.id,
             image:imagePath,
+            description:desc
           }
         }
       }

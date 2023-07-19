@@ -11,7 +11,7 @@ export async function GET(request: NextRequest,{params:{id}}:{params:{id:string}
       }
     })
     if (!news) return error()
-    return success(id)
+    return success(news)
   }
   catch{
     return error()

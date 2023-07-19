@@ -184,17 +184,21 @@ model Adopt {
 // }
 
 model NecUser {
-  id        String    @id @default(cuid())
-  email     String    @unique
-  name      String?
-  bio       String?
-  password  String
-  image     String?
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  type      String    @default("student")
-  news      NecNews[]
-  fee       NecFee[]
+  id           String         @id @default(cuid())
+  email        String         @unique
+  name         String?
+  bio          String?
+  password     String
+  image        String?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  type         String         @default("student")
+  news         NecNews[]
+  fee          NecFee[]
+  notices      NecNotices[]
+  busPass      NecBusPass?
+  books        NecBook[]
+  necResources NecResources[]
 }
 
 model NecNews {
@@ -217,4 +221,40 @@ model NecFee {
   updatedAt DateTime @updatedAt
   author    NecUser? @relation(fields: [authorId], references: [id])
   authorId  String?
+}
+
+model NecNotices {
+  id       String   @id @default(cuid())
+  title    String?
+  content  String?
+  image    String?
+  author   NecUser? @relation(fields: [authorId], references: [id])
+  authorId String?
+}
+
+model NecBusPass {
+  id       String    @id @default(cuid())
+  amount   String?
+  semester String?
+  validity DateTime?
+  author   NecUser?  @relation(fields: [authorId], references: [id])
+  authorId String?   @unique
+}
+
+model NecBook {
+  id      String    @id @default(cuid())
+  title   String
+  author  String?
+  image   String?
+  dueDate String?
+  user    NecUser[]
+}
+
+model NecResources {
+  id       String   @id @default(cuid())
+  title    String
+  content  String?
+  links    String[]
+  author   NecUser? @relation(fields: [authorId], references: [id])
+  authorId String?
 }

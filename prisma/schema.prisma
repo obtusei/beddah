@@ -6,30 +6,44 @@ generator client {
 // //   provider = "prisma-dbml-generator"
 // }
 
-datasource db {
-  provider = "cockroachdb"
-  url      = env("DATABASE_URL")
-}
-
 // datasource db {
-//   provider = "sqlite"
-//   url      = "file:./eddah.db"
+//   provider = "cockroachdb"
+//   url      = env("DATABASE_URL")
 // }
-enum UserType {
-  user
-  admin
+// datasource db {
+//   provider = "mysql"
+//   url      = env("DATABASE_URL")
+// }
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./eddah.db"
 }
 
-enum AdoptStatus {
-  pending
-  accepted
-  rejected
-}
+// enum UserType {
+//   user
+//   admin
+// }
 
-enum RescueStatus {
-  pending
-  rescued
-  confirmed
+// enum AdoptStatus {
+//   pending
+//   accepted
+//   rejected
+// }
+
+// enum RescueStatus {
+//   pending
+//   rescued
+//   confirmed
+// }
+
+
+model Admin {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
 }
 
 model Org {
@@ -56,11 +70,10 @@ model Rescues {
   pet         Pet?         @relation(fields: [petId], references: [id])
   petId       String?
   location    Location?    @relation(fields: [locationId], references: [id])
-  status      RescueStatus @default(pending)
+  status      String? @default("pending") //RescueStatus @default(pending)
   description String?
   image       String?
-  org         Org?         @relation(fields: [orgId], references: [id])
-  orgId       String?
+  org         Org[]
   locationId  String?
   userId      String?
 }
@@ -68,8 +81,8 @@ model Rescues {
 model Location {
   id      String    @id @default(cuid())
   name    String?
-  lat     String?
-  lon     String?
+  lat     Float?
+  lon     Float?
   Rescues Rescues[]
 }
 
@@ -87,9 +100,19 @@ model User {
   Pet                 Pet[]
   Adopt               Adopt[]
   Saved               Saved[]
-  createdCommunity    Community[]   @relation(name: "creator")
   vet                 Veterinarian?
   Rescues             Rescues[]
+  notifications       Notification[]
+  posts               CommunityPost[]
+}
+
+model Notification{
+  id        String   @id @default(cuid())
+  title     String
+  desc      String?
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
 }
 
 model Veterinarian {
@@ -120,15 +143,25 @@ model Community {
   name      String
   username  String   @unique
   bio       String?
-  creator   User?    @relation(name: "creator", fields: [creatorId], references: [id])
-  creatorId String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  posts    CommunityPost[]
   members   User[]
-  Org       Org?     @relation(fields: [orgId], references: [id])
-  orgId     String?
+  creator   Org?     @relation(fields: [creatorId], references: [id])
+  creatorId     String?
 }
 
+
+model CommunityPost{
+  id        String   @id @default(cuid())
+  image String?
+  content String?
+  createdAt DateTime @default(now())
+  user      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+  community Community? @relation(fields: [communityId], references: [id])
+  communityId String?
+}
 model Pet {
   id           String    @id @default(cuid())
   name         String
@@ -137,9 +170,9 @@ model Pet {
   breed        String?
   gender       String?
   image        String?
-  characters   String[]
-  dieases      String[]
-  vaccinations String[]
+  characters   String?//[]
+  dieases      String?//[]
+  vaccinations String?//[]
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
   Adopt        Adopt[]
@@ -155,7 +188,7 @@ model Adopt {
   id        String       @id @default(cuid())
   createdAt DateTime     @default(now())
   updatedAt DateTime     @updatedAt
-  status    AdoptStatus? @default(pending)
+  status    String? @default("pending")//AdoptStatus? @default(pending)
   pet       Pet?         @relation(fields: [petId], references: [id])
   petId     String?
   user      User?        @relation(fields: [userId], references: [id])
@@ -167,94 +200,79 @@ model Adopt {
   @@unique([orgId, petId])
 }
 
-// model Follow {
-//   id        String       @id @default(cuid())
-//   createdAt DateTime     @default(now())
-//   updatedAt DateTime     @updatedAt
-//   status    AdoptStatus? @default(pending)
-//   pet       Pet?         @relation(fields: [petId], references: [id])
-//   petId     String?
-//   user      User?        @relation(fields: [userId], references: [id])
-//   userId    String?
-//   Org       Org?         @relation(fields: [orgId], references: [id])
-//   orgId     String?
 
-//   @@unique([userId, petId])
-//   @@unique([orgId, petId])
+// model NecUser {
+//   id           String         @id @default(cuid())
+//   email        String         @unique
+//   name         String?
+//   bio          String?
+//   password     String
+//   image        String?
+//   createdAt    DateTime       @default(now())
+//   updatedAt    DateTime       @updatedAt
+//   type         String         @default("student")
+//   news         NecNews[]
+//   fee          NecFee[]
+//   notices      NecNotices[]
+//   busPass      NecBusPass?
+//   books        NecBook[]
+//   necResources NecResources[]
 // }
 
-model NecUser {
-  id           String         @id @default(cuid())
-  email        String         @unique
-  name         String?
-  bio          String?
-  password     String
-  image        String?
-  createdAt    DateTime       @default(now())
-  updatedAt    DateTime       @updatedAt
-  type         String         @default("student")
-  news         NecNews[]
-  fee          NecFee[]
-  notices      NecNotices[]
-  busPass      NecBusPass?
-  books        NecBook[]
-  necResources NecResources[]
-}
+// model NecNews {
+//   id        String   @id @default(cuid())
+//   title     String
+//   content   String
+//   image     String?
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+//   author    NecUser? @relation(fields: [authorId], references: [id])
+//   authorId  String?
+// }
 
-model NecNews {
-  id        String   @id @default(cuid())
-  title     String
-  content   String
-  image     String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  author    NecUser? @relation(fields: [authorId], references: [id])
-  authorId  String?
-}
+// model NecFee {
+//   id        String   @id @default(cuid())
+//   amount    String
+//   semester  String
+//   image     String?
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+//   author    NecUser? @relation(fields: [authorId], references: [id])
+//   authorId  String?
+// }
 
-model NecFee {
-  id        String   @id @default(cuid())
-  amount    String
-  semester  String
-  image     String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  author    NecUser? @relation(fields: [authorId], references: [id])
-  authorId  String?
-}
+// model NecNotices {
+//   id       String   @id @default(cuid())
+//   title    String?
+//   content  String?
+//   image    String?
+//   author   NecUser? @relation(fields: [authorId], references: [id])
+//   authorId String?
+// }
 
-model NecNotices {
-  id       String   @id @default(cuid())
-  title    String?
-  content  String?
-  image    String?
-  author   NecUser? @relation(fields: [authorId], references: [id])
-  authorId String?
-}
+// model NecBusPass {
+//   id       String    @id @default(cuid())
+//   amount   String?
+//   semester String?
+//   validity DateTime?
+//   author   NecUser?  @relation(fields: [authorId], references: [id])
+//   authorId String?   @unique
+// }
 
-model NecBusPass {
-  id       String    @id @default(cuid())
-  amount   String?
-  semester String?
-  validity DateTime?
-  author   NecUser?  @relation(fields: [authorId], references: [id])
-  authorId String?   @unique
-}
+// model NecBook {
+//   id      String    @id @default(cuid())
+//   title   String
+//   author  String?
+//   image   String?
+//   dueDate String?
+//   user    NecUser[]
+// }
 
-model NecBook {
-  id      String    @id @default(cuid())
-  title   String
-  author  String?
-  image   String?
-  dueDate String?
-  user    NecUser[]
-}
-
-model NecResources {
-  id       String   @id @default(cuid())
-  title    String
-  content  String?
-  links    String[]
-  author   NecUser? @relation(fields: [authorId], references: [id])
-  authorId String?
-}
+// model NecResources {
+//   id       String   @id @default(cuid())
+//   title    String
+//   content  String?
+//   links    String?//[]
+//   author   NecUser? @relation(fields: [authorId], references: [id])
+//   authorId String?
+// }

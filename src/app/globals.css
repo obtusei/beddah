@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md text-black bg-accent;
+  }
+}
+
 svg .svg-elem-1 {
   stroke-dashoffset: 756.5308837890625px;
   stroke-dasharray: 756.5308837890625px;
@@ -17,8 +23,8 @@ svg.active .svg-elem-1 {
 }
 
 svg .svg-elem-2 {
-  stroke-dashoffset: 53.282981872558594px;
-  stroke-dasharray: 53.282981872558594px;
+  stroke-dashoffset: 63.527435302734375px;
+  stroke-dasharray: 63.527435302734375px;
   fill: transparent;
   -webkit-transition: stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715)
       0.12s,

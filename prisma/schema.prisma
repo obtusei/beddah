@@ -6,19 +6,20 @@ generator client {
 // //   provider = "prisma-dbml-generator"
 // }
 
-// datasource db {
-//   provider = "cockroachdb"
-//   url      = env("DATABASE_URL")
-// }
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
 // datasource db {
 //   provider = "mysql"
 //   url      = env("DATABASE_URL")
 // }
 
-datasource db {
-  provider = "sqlite"
-  url      = "file:./eddah.db"
-}
+// datasource db {
+//   provider = "sqlite"
+//   url      = "file:./eddah.db"
+// }
 
 // enum UserType {
 //   user

@@ -52,14 +52,19 @@ export async function GET(req: Request) {
       id: (user as any).id,
     },
     include: {
-      adopt: {
+      _count: {
         select: {
+          adopt: true,
+          pets: true,
+        },
+      },
+      adopt: {
+        include: {
           pet: {
             include: {
               owner: true,
             },
           },
-          status: true,
         },
       },
     },

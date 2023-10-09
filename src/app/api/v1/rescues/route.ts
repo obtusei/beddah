@@ -6,7 +6,11 @@ import { error, success } from "utils/responses";
 
 export async function GET(request: NextRequest) {
   try {
-    const news = await prisma.rescues.findMany();
+    const news = await prisma.rescues.findMany({
+      include: {
+        location: true,
+      },
+    });
     return success(news);
   } catch {
     return error();

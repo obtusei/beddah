@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import prisma from "@db/prisma";
 import { error, success } from "utils/responses";
-import { isAuth, isAuthOrg } from "@lib/isAuth";
+import { isAuth } from "@lib/isAuth";
 import uploadImage from "utils/imageUpload";
 
 export async function GET(request: NextRequest) {
@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     const comPosts = await prisma.communityPost.create({
       data: {
         content: content,
-        image: path,
+        image: `https://cdn.leftshape.com/${path}`,
         community: {
           connect: {
             id: String(comId),

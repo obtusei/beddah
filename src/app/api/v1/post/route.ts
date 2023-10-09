@@ -7,7 +7,11 @@ import uploadImage from "utils/imageUpload";
 export async function GET(request: NextRequest) {
   try {
     const sessionUser = await isAuth(request);
-    const comPosts = await prisma.communityPost.findMany();
+    const comPosts = await prisma.communityPost.findMany({
+      include: {
+        community: true,
+      },
+    });
     return success(comPosts);
   } catch (er) {
     return error();

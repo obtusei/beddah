@@ -16,6 +16,9 @@ export async function GET(request: NextRequest) {
           },
         },
       },
+      include: {
+        community: true,
+      },
     });
     return success(communities);
   } catch (er) {

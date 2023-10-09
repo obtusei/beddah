@@ -35,7 +35,7 @@ export async function GET(
 }
 
 /* -------------------------------------------------------------------------- */
-/*                         CREATE COMMUNITY POST BY ORG                       */
+/*                         CREATE COMMUNITY POST BY USER                      */
 /* -------------------------------------------------------------------------- */
 
 export async function POST(
@@ -66,18 +66,23 @@ export async function POST(
       return error("You are not a member of this community");
     }
 
-    // const createComPost = await prisma.communityPost.create({
-    //   data: {
-    //     image: `https://cdn.leftshape.com/${path}`,
-    //     content: content,
-    //     community: {
-    //       connect: {
-    //         id: context.params.id,
-    //       },
-    //     },
-    //   },
-    // });
-    return success(followCheck, "Post created successfully");
+    const createComPost = await prisma.communityPost.create({
+      data: {
+        image: `https://cdn.leftshape.com/${path}`,
+        content: content,
+        user: {
+          connect: {
+            id: sessionUser?.id,
+          },
+        },
+        community: {
+          connect: {
+            id: context.params.id,
+          },
+        },
+      },
+    });
+    return success(createComPost, "Post created successfully");
   } catch (er) {
     return error();
   }

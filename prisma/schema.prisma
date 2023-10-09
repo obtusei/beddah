@@ -2,42 +2,15 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// // generator dbml {
-// //   provider = "prisma-dbml-generator"
-// }
-
 datasource db {
   provider = "cockroachdb"
   url      = env("DATABASE_URL")
 }
 
 // datasource db {
-//   provider = "mysql"
-//   url      = env("DATABASE_URL")
-// }
-
-// datasource db {
 //   provider = "sqlite"
 //   url      = "file:./eddah.db"
 // }
-
-// enum UserType {
-//   user
-//   admin
-// }
-
-// enum AdoptStatus {
-//   pending
-//   accepted
-//   rejected
-// }
-
-// enum RescueStatus {
-//   pending
-//   rescued
-//   confirmed
-// }
-
 
 model Admin {
   id        String   @id @default(cuid())
@@ -148,6 +121,7 @@ model Community {
   updatedAt DateTime @updatedAt
   posts    CommunityPost[]
   members   User[]
+  image     String?
   creator   Org?     @relation(fields: [creatorId], references: [id])
   creatorId     String?
 }
@@ -202,78 +176,4 @@ model Adopt {
 }
 
 
-// model NecUser {
-//   id           String         @id @default(cuid())
-//   email        String         @unique
-//   name         String?
-//   bio          String?
-//   password     String
-//   image        String?
-//   createdAt    DateTime       @default(now())
-//   updatedAt    DateTime       @updatedAt
-//   type         String         @default("student")
-//   news         NecNews[]
-//   fee          NecFee[]
-//   notices      NecNotices[]
-//   busPass      NecBusPass?
-//   books        NecBook[]
-//   necResources NecResources[]
-// }
 
-// model NecNews {
-//   id        String   @id @default(cuid())
-//   title     String
-//   content   String
-//   image     String?
-//   createdAt DateTime @default(now())
-//   updatedAt DateTime @updatedAt
-//   author    NecUser? @relation(fields: [authorId], references: [id])
-//   authorId  String?
-// }
-
-// model NecFee {
-//   id        String   @id @default(cuid())
-//   amount    String
-//   semester  String
-//   image     String?
-//   createdAt DateTime @default(now())
-//   updatedAt DateTime @updatedAt
-//   author    NecUser? @relation(fields: [authorId], references: [id])
-//   authorId  String?
-// }
-
-// model NecNotices {
-//   id       String   @id @default(cuid())
-//   title    String?
-//   content  String?
-//   image    String?
-//   author   NecUser? @relation(fields: [authorId], references: [id])
-//   authorId String?
-// }
-
-// model NecBusPass {
-//   id       String    @id @default(cuid())
-//   amount   String?
-//   semester String?
-//   validity DateTime?
-//   author   NecUser?  @relation(fields: [authorId], references: [id])
-//   authorId String?   @unique
-// }
-
-// model NecBook {
-//   id      String    @id @default(cuid())
-//   title   String
-//   author  String?
-//   image   String?
-//   dueDate String?
-//   user    NecUser[]
-// }
-
-// model NecResources {
-//   id       String   @id @default(cuid())
-//   title    String
-//   content  String?
-//   links    String?//[]
-//   author   NecUser? @relation(fields: [authorId], references: [id])
-//   authorId String?
-// }

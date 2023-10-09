@@ -8,7 +8,6 @@ export async function POST(req: NextRequest) {
     const { comId } = await req.json();
     const sessionUser = await isAuth(req);
     if (!sessionUser) return unAuthorized();
-    const ids = { comId: comId, userId: sessionUser.id };
     const followCheck = await prisma.community.findUnique({
       where: {
         id: comId,

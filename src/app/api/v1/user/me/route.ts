@@ -69,7 +69,11 @@ export async function GET(req: Request) {
       },
       communitiesFollowed: true,
       Pet: true,
-      Rescues: true,
+      Rescues: {
+        include: {
+          pet: true,
+        },
+      },
     },
   });
   if (!userFromDB)
